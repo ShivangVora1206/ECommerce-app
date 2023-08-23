@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>E-Commerce | Modify Product</title>
+        <link rel="stylesheet" href="../css/addProduct.css">
+    </head>
+    <body>
+        <div id="formdiv">
+            <h1>Modify Product</h1>
+            <form method="post" name="formmodify" onsubmit="return validateForm()" action="modifyProduct">
+                <div id="usernamediv">
+                    <label>Product Name</label><br>
+                    <input type="text" name="productName" placeholder="<%= product[0].productName %>">
+                </div>
+                <div id="usernamediv">
+                    <label>Product Description</label><br>
+                    <input type="text" name="productDesc">
+                </div>
+                <div id="passworddiv">
+                    <label>Product Price</label><br>
+                    <input type="text" name="productPrice">
+                </div>
+                <button type="submit" id="submitbutton" name="productId" value="<%= product[0]._id %>">Submit</button>
+            </form>
+            <!-- <a href="/login">login</a> -->
+        </div>
+        <script>
+            function validateForm() {
+                var name = document.forms["formmodify"]["productName"].value;
+                var desc = document.forms["formmodify"]["productDesc"].value;
+                var price = document.forms["formmodify"]["productPrice"].value;
+                if (name && desc && price) {
+                    return true;
+                }
+                else{
+                    alert("Please Fill All The Fields");
+                    return false;
+                }
+                }
+    
+        </script>
+    </body>
+</html>

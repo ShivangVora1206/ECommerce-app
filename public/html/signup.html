@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>E-Commerce | Signup</title>
+        <link rel="stylesheet" href="../css/signup.css">
+    </head>
+    <body>
+        <div id="formdiv">
+            <h1>New Account</h1>
+            <form method="post" name="signupform" onsubmit="return validateForm()" action="signup" enctype="multipart/form-data">
+                <div id="usernamediv">
+                    <label>Email</label><br>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div id="usernamediv">
+                    <label>Username</label><br>
+                    <input type="text" name="username">
+                </div>
+                <div id="passworddiv">
+                    <label>Password</label><br>
+                    <input type="password" name="password">
+                </div>
+                <div id="passworddiv">
+                    <label>Role</label><br>
+                    <select name="role">
+                        <option value="" disabled="disabled" selected="selected">Please select a role</option>
+                        <option value="admin">Admin</option>
+                        <option value="customer">Customer</option>
+                    </select>
+                </div>
+                <div id="upload-image-div">
+                    <label>Profile Picture</label><br>
+                    <input id="image-upload" type="file" name="profile" accept="image/*">
+                </div>
+                <input type="submit" id="submitbutton">
+            </form>
+            <a href="/login">login</a>
+        </div>
+        <script>
+            function validateForm() {
+                var email = document.forms["signupform"]["email"].value;
+                var name = document.forms["signupform"]["username"].value;
+                var password = document.forms["signupform"]["password"].value;
+                var role = document.forms["signupform"]["role"].value;
+                var image = document.forms["signupform"]["profile"].value;
+                if (email && name && password && role && image) {
+                    return true;
+                }
+                else{
+                    alert("Name must be filled out");
+                    return false;
+                }
+                }
+
+        </script>
+    </body>
+</html>

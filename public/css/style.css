@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    background-color: rgb(21, 21, 21);
+    /* background-color: rgb(193, 193, 193); */
+}
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /* background-color: rgb(0, 132, 255); */
+    background-color: rgb(35, 35, 35);
+    /* background-image: linear-gradient(to bottom, rgb(255, 179, 0), rgb(255, 119, 0)); */
+}
+img{
+    height: 30px;
+    width: 30px;
+}
+form{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0;
+}
+#load-more{
+    justify-content: center;
+}
+button{
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 6px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+#username-pic{
+    align-items: center;
+    display: flex;
+}
+#username{
+    margin-left: 15px;
+}
+#logout{
+    display: flex;
+    /* margin-right: 15px; */
+}
+main{
+    display: flex;
+    max-width: 1300px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#main-pop-div{
+    justify-content: center;
+    display: flex;
+    /* width: 100%; */
+}
+.card{
+    overflow-wrap: break-word;
+    color: white;
+    margin: 10px;
+    display: flex;
+    background-color: rgb(10, 10, 10);
+    /* background-color: rgb(255, 255, 255); */
+    padding: 10px;
+    border-radius: 10px;
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    flex-direction: row-reverse;
+    min-height: 100px;
+    min-width: 260px;
+    max-width: 300px;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+    align-items: center;
+    font-size: 30px;
+    transition: .3s;
+}
+
+
+.card:hover {
+    /* color: #ffee10; */
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 47, 255, 0.19);
+    text-shadow: 0 0 5px #ffffff;
+}
+
+.pop-div{
+    display: flex;
+    min-height: 400px;
+    width: 500px;
+    padding: 20px;
+    position: absolute;
+    background-color: rgb(21, 21, 21);
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pop-sub-div{
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+}
+.pop-img{
+    width: 100px;
+    height: 100px;
+    transform: scale(2);
+}
+.cancel-button{
+    display: flex;
+    flex-direction: row-reverse;
+    /* padding: 10px; */
+}
+#cancel-button{
+    margin: 10px;
+    font-size: 15;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-width: 0px;
+    border-radius: 10px;
+}
+
+.card-product-name{
+    overflow-wrap: break-word;
+    display: flex;
+    text-align: left;
+}
+.card-product-image{
+    display: flex;
+}
+.card-product-details-btn{
+    display: flex;
+}
+.product-img{
+    border-radius: 10px;
+    height: 155px;
+    width: 170px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+p{
+    margin:0;
+    font-size: medium;
+    font-weight: 400;
+    color: rgb(137, 137, 137);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    margin: 0;
+    overflow-wrap: break-word;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h2{
+    margin: 0;
+    font-size: medium;
+    font-weight: 400;
+    color: rgb(137, 137, 137);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    color: white;
+    margin-right: 20px;
+}
+.plus-minus{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.plus-minus-btn{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 25px;
+    font-size: large;
+}
+#remove-to-cart-btn{
+    width: 67px;
+}
